@@ -13,14 +13,14 @@ import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
+      {/* <Sponsors />
       <About />
       <HowItWorks />
       <Features />
@@ -30,9 +30,9 @@ function App() {
       <Team />
       <Pricing />
       <Newsletter />
-      <FAQ />
+      <FAQ /> */}
       <Footer />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </>
   );
 }
