@@ -18,8 +18,14 @@ import "./styles/app.css";
 function App() {
   return (
     <>
+      {/* Templates que serão usados e modificados */}
       <Navbar />
-      <Hero />
+      {/* <Hero />
+      <FAQ />
+      <Footer /> */}
+      <ScrollToTop />
+
+      {/* Templates - não serão usados ainda */}
       {/* <Sponsors />
       <About />
       <HowItWorks />
@@ -29,10 +35,7 @@ function App() {
       <Testimonials />
       <Team />
       <Pricing />
-      <Newsletter />
-      <FAQ /> */}
-      <Footer />
-      {/* <ScrollToTop /> */}
+      <Newsletter /> */}
     </>
   );
 }
