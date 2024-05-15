@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -15,7 +16,9 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIconWhite } from "./Icons";
+import { LogoNameBlack } from "./Icons";
+import { LogoIconBlack } from "./Icons";
+import { ResponsiveName } from "./Icons";
 import { SwitchTheme } from "./switchTheme";
 
 interface RouteProps {
@@ -25,50 +28,46 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#about",
+    label: "Sobre nós",
   },
   {
     href: "#faq",
     label: "FAQ",
   },
+  {
+    href: "#contact",
+    label: "Contato",
+  },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
-      <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
+      <NavigationMenu className="mx-auto py-3">
+        <NavigationMenuList className=" h-14 px-4 w-screen flex justify-between">
+
+          {/* mobile */}
+          <NavigationMenuItem className="block h-full py-2 md:hidden">
             <a
               rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
+              href="#"
+              className="ml-2 block h-full"
             >
-              <LogoIconWhite width={30}/>
-              Entregação
+              <ResponsiveName className="block h-full"/>
             </a>
           </NavigationMenuItem>
 
-          {/* mobile */}
-          <span className="flex items-center gap-x-2 md:hidden">
-            {/* <ModeToggle /> */}
-            <SwitchTheme />
+          <span className="flex items-center md:hidden">
+            <SwitchTheme className="flex items-center gap-x-2 max-[420px]:hidden"/>
 
             <Sheet
               open={isOpen}
               onOpenChange={setIsOpen}
             >
-              <SheetTrigger className="px-2">
+              <SheetTrigger className="p-3 ml-4 shadow-md">
                 <Menu
                   className="flex md:hidden h-5 w-5"
                   onClick={() => setIsOpen(true)}
@@ -77,10 +76,10 @@ export const Navbar = () => {
                 </Menu>
               </SheetTrigger>
 
-              <SheetContent side={"left"}>
+              <SheetContent side={"right"}>
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                  <SheetTitle className="font-semibold text-xl">
+                    Entreg<span className="font-black">ação</span >
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -101,6 +100,17 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
+          <NavigationMenuItem className="font-bold flex hidden">
+            <a
+              rel="noreferrer noopener"
+              href="/"
+              className="ml-2 font-bold text-xl flex"
+            >
+              <LogoIconBlack />
+              Entregação
+            </a>
+          </NavigationMenuItem>
+
           <nav className="hidden md:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
               <a

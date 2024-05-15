@@ -21,15 +21,13 @@ function App() {
       {/* Templates que serão usados e modificados */}
       <Navbar />
       <Hero />
-      {/* 
+      <About />
       <FAQ />
-    */}
       <Footer />
       <ScrollToTop />
 
       {/* Templates - não serão usados ainda */}
       {/* <Sponsors />
-      <About />
       <HowItWorks />
       <Features />
       <Services />
