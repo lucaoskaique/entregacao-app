@@ -13,35 +13,35 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "Como posso ajudar?",
+    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
+    question: "Onde ficam os pontos de coleta?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
+      "Quem pode ajudar?",
     answer:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Posso ser padrinho?",
+    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-4",
   },
-  {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
-    value: "item-5",
-  },
+  // {
+  //   question:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
+  //   answer:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+  //   value: "item-5",
+  // },
 ];
 
 export const FAQ = () => {
@@ -50,11 +50,11 @@ export const FAQ = () => {
       id="faq"
       className="container py-24 sm:py-32"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Frequently Asked{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+        Dúvidas frequentes
+        {/* <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Questions
-        </span>
+        </span> */}
       </h2>
 
       <Accordion
@@ -77,14 +77,18 @@ export const FAQ = () => {
       </Accordion>
 
       <h3 className="font-medium mt-4">
-        Still have questions?{" "}
-        <a
+        Ainda com dúvidas? <br/> Fale com o nosso time. <br/>{" "}
+        {/* <a
           rel="noreferrer noopener"
           href="#"
           className="text-primary transition-all border-primary hover:border-b-2"
         >
           Contact us
-        </a>
+        </a> */}
+
+<button className="bg-button text-white text-base font-medium py-4 px-4 rounded"><img src="../../src/assets/images/whatsapp-icon.svg"/>Fale conosco agora</button>
+        
+        
       </h3>
     </section>
   );
