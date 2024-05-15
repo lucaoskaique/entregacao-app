@@ -1,38 +1,36 @@
-import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
+import star from "../assets/images/star-icon.svg";
 
 export const About = () => {
   return (
-    <section
-      id="about"
-      className="container py-24 sm:py-32"
-    >
-      <div className="bg-muted/50 border rounded-lg py-12">
-        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
-          <img
-            src={pilot}
-            alt=""
-            className="w-[300px] object-contain rounded-lg"
-          />
-          <div className="bg-green-0 flex flex-col justify-between">
-            <div className="pb-6">
-              <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
-                </span>
-                Company
-              </h2>
-              <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <Statistics />
-          </div>
+    <section id="about" className="container mt-[50px] px-5">
+      <div className="py-5 relative flex">
+        <img
+          src={star}
+          alt=""
+          className="w-[58.2px] absolute transform right-0 top-0"
+        />
+        <div className="px-6 flex flex-col">
+          <h2 className="text-3xl font-bold max-w-[320px]">
+            Transformamos Solidariedade em Ação
+          </h2>
+          <p className="text-sm text-muted-foreground mt-6 leading-[35px]">
+            Somos uma plataforma inovadora que utiliza o WhatsApp para facilitar
+            o processo de coleta e entrega de doações entre colaboradores
+            voluntários e estabelecimentos parceiros, como cozinhas e
+            restaurantes.
+            <br />
+            <br />
+            Nossa missão é conectar pessoas dispostas a ajudar como entregadores
+            ou padrinhos de estabelecimentos, fornecendo uma experiência simples
+            e eficiente.
+            <br />
+            <br />
+            Com notificações em tempo real e um painel de controle intuitivo,
+            permitimos que os usuários acompanhem e participem ativamente de
+            cada etapa do processo, fortalecendo a solidariedade em nossa
+            comunidade e impactando positivamente a vida daqueles que mais
+            necessitam.
+          </p>
         </div>
       </div>
     </section>
