@@ -20,6 +20,7 @@ function App() {
     <>
       {/* Templates que serão usados e modificados */}
       <Navbar />
+      <FAQ />
       {/* <Hero />
       <FAQ />
       <Footer /> */}
