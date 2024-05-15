@@ -1,57 +1,53 @@
-import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { useState } from 'react'
+
+import Car from '@/assets/images/car-icon.svg'
+import Padrinho from '@/assets/images/padrinho-icon.svg'
+import Arrow from '@/assets/images/arrow-up-right.png'
+
+import ButtonWpp from './ui/button-wpp-hero'
 
 export const Hero = () => {
+  const [text1, setText1] = useState<boolean>(false)
+  const [text2, setText2] = useState<boolean>(false)
+
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-      <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
-            </span>{" "}
-            landing page
-          </h1>{" "}
-          for{" "}
-          <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2>
-        </main>
-
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Build your React landing page effortlessly with the required sections
-          to your project.
-        </p>
-
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
-
-          <a
-            rel="noreferrer noopener"
-            href=""
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
-          </a>
+    <section className='flex flex-col gap-6 items-center mb-[80px] mt-6'>
+      <div className='w-[350px] min-h-[280px] max-h-[400px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
+        <div className='border-b-2 border-neutral-300 mb-6'>
+          <div className='flex gap-3 mb-6'>
+            <img src={Car} alt='Ícone do carrinho' />
+            <div className='flex flex-col text-white'>
+              <span className='text-base font-bold'>Sou</span>
+              <span className='text-3xl font-bold'>Entregador</span>
+            </div>
+          </div>
+          <ButtonWpp />
         </div>
+        <button type='button' className='border border-neutral-300 text-neutral-300 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText1(!text1)}>
+          <span>Mais detalhes</span>
+          <img src={Arrow} alt='Seta' className={`${text1 ? 'transform -rotate-90' : ''}`} />
+        </button>
+        <span className={`${text1 ? 'block' : 'hidden'} text-neutral-300 text-sm mt-6 leading-7 font-normal`}>Basta entrar no grupo, aguardar aparecer o próximo pedido, clicar no link para aceitá-lo e seu cadastro começará imediatamente.</span>
       </div>
-
-      {/* Hero cards sections */}
-      <div className="z-10">
-        <HeroCards />
+      <div className='w-[350px] min-h-[280px] max-h-[410px] border-[3px] border-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
+        <div className='border-b-2 border-neutral-300 mb-4'>
+          <div className='flex gap-3 mb-6'>
+            <img src={Padrinho} alt='Ícone do padrinho' />
+            <div className='flex flex-col text-neutral-800'>
+              <span className='text-base font-bold'>Sou</span>
+              <span className='text-3xl font-bold'>Padrinho</span>
+            </div>
+          </div>
+          <ButtonWpp />
+        </div>
+        <button type='button' className='border border-neutral-700 text-neutral-700 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText2(!text2)}>
+          Mais detalhes
+          <img src={Arrow} alt='Seta' className={`${text2 ? 'transform -rotate-90' : ''}`} />
+        </button>
+        <span className={`${text2 ? 'block' : 'hidden'} text-black text-sm mt-6 leading-7 font-normal`}>
+          <strong>Padrinho (Solicitante): </strong>
+          Intermedia o pedido entre o Entregador e o Restaurante/Cozinha, Acompanha todos os pedidos, Apadrinha novos Restaurantes/Cozinhas.</span>
       </div>
-
-      {/* Shadow effect */}
-      <div className="shadow"></div>
     </section>
   );
 };
