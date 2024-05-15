@@ -78,13 +78,7 @@ export const FAQ = () => {
 
       <h3 className="font-medium mt-4">
         Ainda com dúvidas? <br/> Fale com o nosso time. <br/>{" "}
-        {/* <a
-          rel="noreferrer noopener"
-          href="#"
-          className="text-primary transition-all border-primary hover:border-b-2"
-        >
-          Contact us
-        </a> */}
+        
 
 <button className="bg-button text-white text-base font-medium py-4 px-4 rounded"><img src="../../src/assets/images/whatsapp-icon.svg"/>Fale conosco agora</button>
         
