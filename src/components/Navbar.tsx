@@ -12,11 +12,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import { LogoIconWhite } from "./Icons";
+import { SwitchTheme } from "./switchTheme";
 
 interface RouteProps {
   href: string;
@@ -54,14 +54,15 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIcon />
-              ShadcnUI/React
+              <LogoIconWhite width={30}/>
+              Entregação
             </a>
           </NavigationMenuItem>
 
           {/* mobile */}
-          <span className="flex md:hidden">
-            <ModeToggle />
+          <span className="flex items-center gap-x-2 md:hidden">
+            {/* <ModeToggle /> */}
+            <SwitchTheme />
 
             <Sheet
               open={isOpen}
@@ -94,17 +95,6 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <a
-                    rel="noreferrer noopener"
-                    href=""
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
-                  >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
-                  </a>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -127,16 +117,6 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href=""
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
             <ModeToggle />
           </div>
         </NavigationMenuList>
