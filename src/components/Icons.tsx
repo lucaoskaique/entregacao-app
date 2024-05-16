@@ -23,7 +23,7 @@ export const CarIcon = ({ color = "black", width = 60, height = 60, className }:
 
 export const PadrinhoIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
     return (
-        <svg width={width} height={height} viewBox="0 0 61 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={className} width={width} height={height} viewBox="0 0 61 63" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M56.0914 16.2813C58.5778 20.7404 60 25.9119 60 31.4266C60 48.2332 46.7923 61.8533 30.5016 61.8533C14.2109 61.8533 1 48.2332 1 31.4266C1 14.6201 14.2077 1 30.4984 1C34.5703 1 38.4507 1.85166 41.9826 3.38983" stroke={color} stroke-width="2" stroke-miterlimit="10" />
             <path d="M43.3086 5.27069C43.3086 5.27069 45.6506 10.2212 51.9306 8.05675C54.3986 7.20563 54.3073 2.40175 48.3011 2.65676C41.9739 2.92453 40.3779 10.6484 44.3128 14.1262C46.7461 16.2747 51.8205 16.2046 54.2978 11.9745" stroke={color} stroke-width="2" stroke-miterlimit="10" />
             <path d="M49.873 12.4047L54.2958 11.748V16.2778" stroke={color} stroke-width="2" stroke-miterlimit="10" />
