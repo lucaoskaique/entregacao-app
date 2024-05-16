@@ -16,9 +16,8 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon, LogoName, LogoIconName } from './Logos'
+import { LogoIcon, LogoName } from './Logos'
 import { SwitchTheme } from "./switchTheme";
-import { CarIcon, PadrinhoIcon, InstagramIcon, WhatsappIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
