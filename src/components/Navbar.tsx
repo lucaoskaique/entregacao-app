@@ -50,21 +50,19 @@ export const Navbar = () => {
         <NavigationMenuList className=" h-14 px-8 w-screen flex justify-between">
 
           {/* mobile */}
-          <div className="flex justify-between w-full h-10 md:hidden">
+          <div className="flex justify-between w-full h-10 min-[992px]:hidden relative">
             <ResponsiveIcon className="block h-full" />
-            <ResponsiveName className="block h-full" />
-            <span className="flex items-center md:hidden">
-              <SwitchTheme className="flex items-center gap-x-2 max-[420px]:hidden" />
-
+            <ResponsiveName className="block h-full absolute inset-x-1/2 -translate-x-1/2" />
+            <span className="flex items-center min-[992px]:hidden">
+              <SwitchTheme className="flex items-center gap-x-2 max-[640px]:hidden mx-4" />
+              <ModeToggle className="min-[640px]:hidden max-[460px]:hidden" />
               <Sheet
                 open={isOpen}
-                onOpenChange={setIsOpen}
-              >
+                onOpenChange={setIsOpen}>
                 <SheetTrigger className="p-3 ml-4 shadow-md">
                   <Menu
-                    className="flex md:hidden h-5 w-5"
-                    onClick={() => setIsOpen(true)}
-                  >
+                    className="flex min-[992px]:hidden h-5 w-5"
+                    onClick={() => setIsOpen(true)}>
                     <span className="sr-only">Menu Icon</span>
                   </Menu>
                 </SheetTrigger>
@@ -106,7 +104,7 @@ export const Navbar = () => {
             </a>
           </NavigationMenuItem>
 
-          <nav className="hidden md:flex gap-2">
+          <nav className="hidden min-[992px]:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
               <a
                 rel="noreferrer noopener"
@@ -121,8 +119,8 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
-            <ModeToggle />
+          <div className="hidden min-[992px]:flex gap-2">
+            <ModeToggle  />
           </div>
         </NavigationMenuList>
       </NavigationMenu>
