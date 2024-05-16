@@ -77,12 +77,12 @@ export const FAQ = () => {
       </Accordion>
 
       <h3 className="font-medium mt-4">
-        Ainda com dúvidas? <br/> Fale com o nosso time. <br/>{" "}
-        
+        Ainda com dúvidas? <br /> Fale com o nosso time. <br />{" "}
 
-<button className="bg-button text-white text-base font-medium py-4 px-4 rounded"><img src="../../src/assets/images/whatsapp-icon.svg"/>Fale conosco agora</button>
-        
-        
+
+        <button className="bg-button text-white text-base font-medium py-4 px-4 rounded"><img src="../../src/assets/images/whatsapp-icon.svg" />Fale conosco agora</button>
+
+
       </h3>
     </section>
   );

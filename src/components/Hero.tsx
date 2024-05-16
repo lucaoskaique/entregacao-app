@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import Car from '@/assets/images/car-icon.svg'
-import Padrinho from '@/assets/images/padrinho-icon.svg'
+import TruckIcon from '@/assets/images/truck-icon.png'
+import HeartIcon from '@/assets/images/heart-icon.png'
 import Arrow from '@/assets/images/arrow-up-right.png'
 
 import ButtonWpp from './ui/button-wpp-hero'
@@ -11,17 +11,17 @@ export const Hero = () => {
   const [text2, setText2] = useState<boolean>(false)
 
   return (
-    <section className='flex flex-col gap-6 items-center mb-[80px] mt-6 mx-3 min-[992px]:flex-row min-[992px]:justify-center'>
-      <div className='w-full min-w-[250px] max-w-[411px] min-h-[280px] max-h-[400px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
+    <section className='relative flex flex-col gap-6 items-center mb-[80px] mt-6 mx-3 min-[992px]:flex-row min-[992px]:justify-center'>
+      <div className='w-full min-w-[250px] max-w-[411px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
         <div className='border-b-2 border-neutral-300 mb-6'>
           <div className='flex gap-3 mb-6'>
-            <img src={Car} alt='Ícone do carrinho' />
+            <img src={TruckIcon} alt='Ícone do carrinho' />
             <div className='flex flex-col text-white'>
-              <span className='text-base font-bold'>Sou</span>
+              <span className='text-base font-normal'>Sou</span>
               <span className='text-3xl font-bold'>Entregador</span>
             </div>
           </div>
-          <ButtonWpp />
+          <ButtonWpp title='Quero entregar' />
         </div>
         <button type='button' className='border border-neutral-300 text-neutral-300 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText1(!text1)}>
           <span>Mais detalhes</span>
@@ -29,16 +29,16 @@ export const Hero = () => {
         </button>
         <span className={`${text1 ? 'block' : 'hidden'} text-neutral-300 text-sm mt-6 leading-7 font-normal`}>Basta entrar no grupo, aguardar aparecer o próximo pedido, clicar no link para aceitá-lo e seu cadastro começará imediatamente.</span>
       </div>
-      <div className='w-full min-w-[250px] max-w-[411px] min-h-[250px] max-h-[410px] border-[3px] border-neutral-800 rounded-xl p-6 flex flex-col shadow-xl bg-white'>
+      <div className='w-full min-w-[250px] max-w-[411px] border-[3px] border-neutral-800 rounded-xl p-6 flex flex-col shadow-xl bg-white'>
         <div className='border-b-2 border-neutral-300 mb-4'>
           <div className='flex gap-3 mb-6'>
-            <img src={Padrinho} alt='Ícone do padrinho' />
+            <img src={HeartIcon} alt='Ícone do padrinho' />
             <div className='flex flex-col text-neutral-800'>
-              <span className='text-base font-bold'>Sou</span>
+              <span className='text-base font-normal'>Sou</span>
               <span className='text-3xl font-bold'>Padrinho</span>
             </div>
           </div>
-          <ButtonWpp />
+          <ButtonWpp title='Quero apadrinhar' />
         </div>
         <button type='button' className='border border-neutral-700 text-neutral-700 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText2(!text2)}>
           Mais detalhes

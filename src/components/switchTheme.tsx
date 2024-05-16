@@ -4,7 +4,7 @@ import { Moon, Sun } from "lucide-react"
 
 
 const SwitchTheme = (props: {className?:string}) => {
-  const { theme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
   
   return (
     <div className={props.className}>

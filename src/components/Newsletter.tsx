@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Subscribed!");

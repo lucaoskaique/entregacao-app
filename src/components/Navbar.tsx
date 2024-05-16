@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 import {
   NavigationMenu,
@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoNameBlack } from "./Icons";
+// import { LogoNameBlack } from "./Icons";
 import { LogoIconBlack } from "./Icons";
 import { ResponsiveName } from "./Icons";
 import { SwitchTheme } from "./switchTheme";
@@ -100,7 +100,7 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
-          <NavigationMenuItem className="font-bold flex hidden">
+          <NavigationMenuItem className="font-bold hidden">
             <a
               rel="noreferrer noopener"
               href="/"
