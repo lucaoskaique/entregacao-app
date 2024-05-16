@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import TruckIcon from '@/assets/images/truck-icon.png'
 import HeartIcon from '@/assets/images/heart-icon.png'
-import Arrow from '@/assets/images/arrow-up-right.png'
+import Arrow from '@/assets/images/arrow-down-right.svg'
 
 import ButtonWpp from './ui/button-wpp-hero'
 
