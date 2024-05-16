@@ -8,6 +8,11 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    screens: {
+      'mobile': '360px',
+      'tablet': '992px',
+      'desktop': '1440px',
+    },
     container: {
       center: true,
       padding: "1.5rem",
@@ -17,6 +22,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        wppButton: "#71CD69",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
