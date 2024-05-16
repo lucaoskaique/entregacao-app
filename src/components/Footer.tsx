@@ -1,14 +1,16 @@
 import SOS from '@/assets/images/sos-cozinhas.png'
-import InstagramIcon from '@/assets/images/instagram-icon.svg'
-import Logo from '@/assets/images/logo.png'
+import InstagramIcon from '@/assets/images/icons/instagram-icon.svg'
+import { LogoIconLight, LogoNameLight } from './Icons';
 
 export const Footer = () => {
   return (
     <section className='bg-neutral-900 px-[15px] pb-[56.41px] pt-7'>
       <div>
         <div className='flex flex-col items-center my-[41px]'>
-          <img src={Logo} alt='Logo' className='w-[55.59px] h-[53px]' />
-          <span className='text-white text-3xl'>entregação</span>
+          <LogoIconLight className='w-[55.59px] h-[53px]' />
+          <LogoNameLight />
+          {/* <img src={Logo} alt='Logo' className='w-[55.59px] h-[53px]' />
+          <span className='text-white text-3xl'>entregação</span> */}
         </div>
         <ul className='text-white flex flex-col items-center gap-6'>
           <li>
