@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
-import CarIcon from '@/assets/images/icons/delivery-car-icon.svg'
-import PadrinhoIcon from '@/assets/images/icons/padrinho-help-icon.svg'
+import { CarIcon, PadrinhoIcon } from './Icons'
 import Arrow from '@/assets/images/arrow-down-right.svg'
 
 import ButtonWpp from './ui/button-wpp-hero'
@@ -15,7 +14,7 @@ export const Hero = () => {
       <div className='w-full min-w-[250px] max-w-[411px] min-h-[280px] max-h-[400px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
         <div className='border-b-2 border-neutral-300 mb-6'>
           <div className='flex gap-3 mb-6'>
-            <img src={CarIcon} alt='Ícone do carrinho' />
+            <CarIcon />
             <div className='flex flex-col text-white'>
               <span className='text-base font-bold'>Sou</span>
               <span className='text-3xl font-bold'>Entregador</span>
@@ -32,7 +31,7 @@ export const Hero = () => {
       <div className='w-full min-w-[250px] max-w-[411px] min-h-[250px] max-h-[410px] border-[3px] border-neutral-800 rounded-xl p-6 flex flex-col shadow-xl bg-white'>
         <div className='border-b-2 border-neutral-300 mb-4'>
           <div className='flex gap-3 mb-6'>
-            <img src={PadrinhoIcon} alt='Ícone do padrinho' />
+            <PadrinhoIcon />
             <div className='flex flex-col text-neutral-800'>
               <span className='text-base font-bold'>Sou</span>
               <span className='text-3xl font-bold'>Padrinho</span>
