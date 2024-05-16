@@ -1,5 +1,5 @@
 // import SOS from '@/assets/images/sos-cozinhas.png'
-import InstagramIcon from '@/assets/images/instagram-icon.svg'
+import InstagramIcon from '@/assets/images/icons/instagram-icon.svg'
 import Logo from '@/assets/images/logo.svg'
 
 export const Footer = () => {
