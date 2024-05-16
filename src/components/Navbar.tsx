@@ -16,9 +16,11 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-// import { LogoNameBlack } from "./Icons";
-import { LogoIconBlack } from "./Icons";
-import { ResponsiveName } from "./Icons";
+
+import { ResponsiveLogoIcon } from "./Icons";
+import { ResponsiveLogoName } from "./Icons";
+import { LogoIconDark } from './Icons'
+
 import { SwitchTheme } from "./switchTheme";
 
 interface RouteProps {
@@ -45,59 +47,52 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
-      <NavigationMenu className="mx-auto py-3">
-        <NavigationMenuList className=" h-14 px-4 w-screen flex justify-between">
+    < header className="py-5">
+      <NavigationMenu className="sticky block top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background">
+        <NavigationMenuList className="block">
+          <NavigationMenuItem >
+            {/* mobile */}
+            <div className="flex justify-between w-full h-10 tablet:hidden relative">
+              <ResponsiveLogoIcon className="block" />
+              <ResponsiveLogoName className="block absolute inset-x-1/2 -translate-x-2/4" />
+              <span className="flex items-center gap-x-4 tablet:hidden">
+                <SwitchTheme className="flex items-center h-full gap-x-2 max-[640px]:hidden" />
+                <ModeToggle className="min-[640px]:hidden max-[460px]:hidden" />
+                <Sheet
+                  open={isOpen}
+                  onOpenChange={setIsOpen}>
+                  <SheetTrigger className="p-3 h-full shadow-md">
+                    <Menu
+                      className="flex min-[992px]:hidden h-5 w-5"
+                      onClick={() => setIsOpen(true)}>
+                      <span className="sr-only">Menu Icon</span>
+                    </Menu>
+                  </SheetTrigger>
 
-          {/* mobile */}
-          <NavigationMenuItem className="block h-full py-2 md:hidden">
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="ml-2 block h-full"
-            >
-              <ResponsiveName className="block h-full"/>
-            </a>
+                  <SheetContent side={"right"}>
+                    <SheetHeader>
+                      <SheetTitle className="font-semibold text-xl">
+                        Entreg<span className="font-black">ação</span >
+                      </SheetTitle>
+                    </SheetHeader>
+                    <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                      {routeList.map(({ href, label }: RouteProps) => (
+                        <a
+                          rel="noreferrer noopener"
+                          key={label}
+                          href={href}
+                          onClick={() => setIsOpen(false)}
+                          className={buttonVariants({ variant: "ghost" })}
+                        >
+                          {label}
+                        </a>
+                      ))}
+                    </nav>
+                  </SheetContent>
+                </Sheet>
+              </span>
+            </div>
           </NavigationMenuItem>
-
-          <span className="flex items-center md:hidden">
-            <SwitchTheme className="flex items-center gap-x-2 max-[420px]:hidden"/>
-
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
-              <SheetTrigger className="p-3 ml-4 shadow-md">
-                <Menu
-                  className="flex md:hidden h-5 w-5"
-                  onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
-              </SheetTrigger>
-
-              <SheetContent side={"right"}>
-                <SheetHeader>
-                  <SheetTitle className="font-semibold text-xl">
-                    Entreg<span className="font-black">ação</span >
-                  </SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
-                    <a
-                      rel="noreferrer noopener"
-                      key={label}
-                      href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
-                    >
-                      {label}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </span>
 
           {/* desktop */}
           <NavigationMenuItem className="font-bold hidden">
@@ -106,12 +101,12 @@ export const Navbar = () => {
               href="/"
               className="ml-2 font-bold text-xl flex"
             >
-              <LogoIconBlack />
+              <LogoIconDark />
               Entregação
             </a>
           </NavigationMenuItem>
 
-          <nav className="hidden md:flex gap-2">
+          <nav className="hidden min-[992px]:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
               <a
                 rel="noreferrer noopener"
@@ -126,11 +121,11 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
+          <div className="hidden min-[992px]:flex gap-2">
             <ModeToggle />
           </div>
         </NavigationMenuList>
       </NavigationMenu>
-    </header>
+    </header >
   );
 };
