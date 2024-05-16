@@ -1,1 +1,2 @@
-npm lint
+npx --no-install lint-staged
+

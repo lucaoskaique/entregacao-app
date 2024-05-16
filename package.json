@@ -39,6 +39,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20.10.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
