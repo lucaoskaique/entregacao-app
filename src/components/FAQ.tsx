@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import WhatsappIcon from '@/assets/images/icons/whatsapp-icon.svg'
 
 interface FAQProps {
   question: string;
@@ -68,8 +69,8 @@ export const FAQ = () => {
         <div className="flex flex-col items-center mt-8 gap-y-3">
           <h3 className="font-bold text-2xl text-center">
             Ainda com dúvidas?<br />Fale com o nosso time.</h3>
-          <button className="bg-[#71CD69] text-white text-base font-bold py-4 px-4 rounded-lg flex items-center gap-x-2">
-            <img src="../../src/assets/images/whatsapp-icon.svg" width={34}/>Fale conosco agora</button>
+          <button className="bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex items-center gap-x-2">
+            <img src={WhatsappIcon} width={34}/>Fale conosco agora</button>
         </div>
       </section>
     </section>
