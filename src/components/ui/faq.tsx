@@ -3,15 +3,10 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-<<<<<<< Updated upstream:src/components/ui/faq.tsx
-} from '@/components/ui/accordion'
 
-import { WhatsappIcon } from '../../utils/icons'
-=======
+
 } from "@/components/ui/accordion";
-import { WhatsappIcon } from './Icons'
-import ButtonWpp from "./ui/button-wpp-hero";
->>>>>>> Stashed changes:src/components/FAQ.tsx
+import ButtonWpp from "./button-wpp-hero";
 
 interface FAQProps {
   question: string
@@ -78,7 +73,7 @@ export const FAQ = () => {
             Ainda com dúvidas?<br />Fale com o nosso time.</h3>
           {/* <button className="px-[60px] bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex justify-center items-center gap-x-2"> */}
 
-          <ButtonWpp whatsappLink="https://chat.whatsapp.com/EaLtt3YjZVrLkwNPojlxIO" />
+          <ButtonWpp title= "Fale agora"whatsappLink="https://chat.whatsapp.com/EaLtt3YjZVrLkwNPojlxIO" />
           
         </div>
       </section>
