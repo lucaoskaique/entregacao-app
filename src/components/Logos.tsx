@@ -1,3 +1,5 @@
+import { useTheme } from "./theme-provider"
+
 type ImageProps = {
   color?: string,
   width?: number,
@@ -5,11 +7,11 @@ type ImageProps = {
   className?: string
 }
 
-export const LogoIcon = ({ color = "black", width = 32, height = 32, className }: ImageProps) => {
+export const LogoIcon = ({color = "black", width = 32, height = 32, className }: ImageProps) => {
   return (
     <svg className={className} width={width} height={height} viewBox="0 0 649 576" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M399.13 368.861L552.815 288L610.555 451.832" stroke={color} stroke-width="80" stroke-miterlimit="10" />
-      <path d="M530.295 343.832C511.696 422.91 454.645 491.27 372.45 520.713C243.503 566.913 101.52 499.86 55.3046 370.962C9.09851 242.056 76.1645 100.119 205.103 53.9186C285.69 25.0491 355.167 42.98 387.888 111.993C422.913 185.871 336.33 358.982 41.0506 274.077" stroke={color} stroke-width="80" stroke-miterlimit="10" />
+      <path d="M399.13 368.861L552.815 288L610.555 451.832" stroke={color} strokeWidth="80" strokeMiterlimit="10" />
+      <path d="M530.295 343.832C511.696 422.91 454.645 491.27 372.45 520.713C243.503 566.913 101.52 499.86 55.3046 370.962C9.09851 242.056 76.1645 100.119 205.103 53.9186C285.69 25.0491 355.167 42.98 387.888 111.993C422.913 185.871 336.33 358.982 41.0506 274.077" stroke={color} strokeWidth="80" strokeMiterlimit="10" />
     </svg>
   )
 }
@@ -29,6 +31,25 @@ export const LogoName = ({ color = "black", height = 32, className }: ImageProps
       <path d="M504.79 58.77C504.79 39.86 519.35 24.91 536.86 24.91C554.37 24.91 568.93 39.86 568.93 58.77C568.93 77.68 554.36 92.63 536.86 92.63C519.36 92.63 504.79 77.55 504.79 58.77ZM555 58.77C555 46.51 546.82 37.95 536.86 37.95C526.9 37.95 518.72 46.51 518.72 58.77C518.72 71.03 526.9 79.6 536.86 79.6C546.82 79.6 555 71.04 555 58.77Z" fill={color} />
     </svg>
   )
+}
+
+export const ResponsiveLogoIcon = () => {
+  const { theme } = useTheme()
+  if(theme==="dark"){
+    return <LogoIcon color="white" />
+  }else{
+    return <LogoIcon color="black" />
+  }
+}
+
+export const ResponsiveLogoName = ({className = "absolute inset-x-1/2 -translate-x-2/4"}:{className?:string}) => {
+  const { theme } = useTheme()
+  if(theme==="dark"){
+    return <LogoName className={className} color="white" height={45} />
+  }else{
+    return <LogoName className={className} color="black" height={45} />
+  }
+  
 }
 
 type FullImageProps = {
