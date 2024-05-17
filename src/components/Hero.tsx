@@ -20,7 +20,7 @@ export const Hero = () => {
               <span className='text-3xl font-bold'>Entregador</span>
             </div>
           </div>
-          <ButtonWpp />
+          <ButtonWpp whatsappLink="https://chat.whatsapp.com/EaLtt3YjZVrLkwNPojlxIO"/>
         </div>
         <button type='button' className='border border-neutral-300 text-neutral-300 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText1(!text1)}>
           <span>Mais detalhes</span>
@@ -37,7 +37,7 @@ export const Hero = () => {
               <span className='text-3xl font-bold'>Padrinho</span>
             </div>
           </div>
-          <ButtonWpp />
+          <ButtonWpp whatsappLink="https://api.whatsapp.com/send?phone=555127970709&text=cadastro"/>
         </div>
         <button type='button' className='border border-neutral-700 text-neutral-700 text-[13px] font-normal rounded-sm p-2 w-32 flex justify-between items-center' onClick={() => setText2(!text2)}>
           Mais detalhes
