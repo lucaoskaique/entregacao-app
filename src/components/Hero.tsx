@@ -14,7 +14,7 @@ export const Hero = () => {
       <div className='w-full min-w-[250px] max-w-[411px] min-h-[280px] max-h-[400px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
         <div className='border-b-2 border-neutral-300 mb-6'>
           <div className='flex gap-3 mb-6'>
-            <CarIcon />
+            <CarIcon color='white'/>
             <div className='flex flex-col text-white'>
               <span className='text-base font-bold'>Sou</span>
               <span className='text-3xl font-bold'>Entregador</span>
