@@ -4,7 +4,7 @@ import { LogoIconLight, LogoNameLight } from './Icons';
 
 export const Footer = () => {
   return (
-    <section className='bg-neutral-900 px-[15px] pb-[56.41px] pt-7'>
+    <section className='bg-neutral-900 px-5 pb-[56.41px] pt-7'>
       <div>
         <div className='flex flex-col items-center my-[41px]'>
           <LogoIconLight className='w-[55.59px] h-[53px]' />
