@@ -10,7 +10,7 @@ export const Hero = () => {
   const [text2, setText2] = useState<boolean>(false)
 
   return (
-    <section className='mx-5 flex flex-col gap-6 items-center mb-[80px] mt-6 min-[992px]:flex-row min-[992px]:justify-center'>
+    <section className='container flex flex-col gap-6 items-center mb-[80px] mt-6 min-[992px]:flex-row min-[992px]:justify-center'>
       <div className='w-full min-w-[250px] max-w-[411px] min-h-[280px] max-h-[400px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
         <div className='border-b-2 border-neutral-300 mb-6'>
           <div className='flex gap-3 mb-6'>
