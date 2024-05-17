@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "../mode-toggle";
-import { LogoIcon, ResponsiveLogoName } from '../Logos'
+import { LogoIcon, LogoName } from '../../utils/logos/logos'
 import { SwitchTheme } from "../switchTheme";
 
 interface RouteProps {
@@ -43,15 +43,16 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="py-5">
-      <NavigationMenu className="container sticky block top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="sticky top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background py-5">
+      <NavigationMenu className="container block">
         <NavigationMenuList className="block">
           <NavigationMenuItem >
             {/* mobile */}
             <div className="flex justify-between w-full h-10 tablet:hidden relative">
-              <LogoIcon color="green" />
-              <ResponsiveLogoName />
-
+              <section className="flex items-center gap-x-4">
+                <LogoIcon color="green" />
+                <LogoName />
+              </section>
               <span className="flex items-center gap-x-4 tablet:hidden">
                 <SwitchTheme className="flex items-center h-full gap-x-2 max-[640px]:hidden" />
                 <ModeToggle className="min-[640px]:hidden max-[460px]:hidden" />
@@ -95,8 +96,8 @@ export const Navbar = () => {
           <NavigationMenuItem>
             <div className="hidden tablet:flex justify-between w-full h-10 relative">
               <section className="flex items-center gap-x-4">
-                <LogoIcon color="green"/>
-                <ResponsiveLogoName className="" />
+                <LogoIcon color="green" />
+                <LogoName />
               </section>
               <section className="flex items-center gap-x-4">
                 <nav className="hidden min-[992px]:flex gap-2">
