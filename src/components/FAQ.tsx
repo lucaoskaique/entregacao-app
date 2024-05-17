@@ -42,7 +42,7 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="py-20 mx-5">
+      className="container py-20">
       <h2 className="text-2xl md:text-4xl font-bold mb-4">
         Dúvidas frequentes
       </h2>
