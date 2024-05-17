@@ -1,9 +1,9 @@
-import { About } from './components/About'
+import { About } from './components/ui/about'
 import { FAQ } from './components/ui/faq'
 import { Footer } from './components/ui/footer'
 import { Hero } from './components/ui/hero'
 import { Navbar } from './components/ui/navbar'
-import { ScrollToTop } from './components/ScrollToTop'
+import { ScrollToTop } from './components/ui/scroll-to-top'
 import './styles/app.css'
 
 function App() {
