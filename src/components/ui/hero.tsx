@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { HeartIcon, TruckIcon } from '../../utils/icons'
 import Arrow from '@/assets/images/arrow-down-right.svg'
+// import BgGreenVectorHero from '@/assets/images/background-vector-hero.svg'
 
 import ButtonWpp from './button-wpp-hero'
 import { Container } from './container';
@@ -12,7 +13,7 @@ export const Hero = () => {
 
   return (
     <Container>
-      <section className='min-h-[100px] flex flex-col gap-6 items-center mt-6 mx-3 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start'>
+      <section className='min-h-[100px] flex flex-col gap-6 items-center mt-6 mx-3 tablet:flex-row tablet:justify-center tablet:items-start'>
         <div className='w-full min-w-[250px] max-w-[411px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
           <div className='border-b border-neutral-300 mb-6'>
             <div className='flex gap-3 mb-6'>
@@ -50,6 +51,7 @@ export const Hero = () => {
             Intermedia o pedido entre o Entregador e o Restaurante/Cozinha, Acompanha todos os pedidos, Apadrinha novos Restaurantes/Cozinhas.</span>
         </div>
       </section>
+      {/* <img className="absolute -z-10 -right-[170px] top-[300px]" src={BgGreenVectorHero} /> */}
     </Container>
   );
 };
