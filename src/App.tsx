@@ -1,8 +1,8 @@
 import { About } from './components/About'
-import { FAQ } from './components/FAQ'
-import { Footer } from './components/Footer'
-import { Hero } from './components/Hero'
-import { Navbar } from './components/Navbar'
+import { FAQ } from './components/ui/faq'
+import { Footer } from './components/ui/footer'
+import { Hero } from './components/ui/hero'
+import { Navbar } from './components/ui/navbar'
 import { ScrollToTop } from './components/ScrollToTop'
 import './styles/app.css'
 
