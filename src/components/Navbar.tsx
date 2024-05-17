@@ -43,8 +43,8 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="py-5 mx-5">
-      <NavigationMenu className="sticky block top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="py-5">
+      <NavigationMenu className="container sticky block top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background">
         <NavigationMenuList className="block">
           <NavigationMenuItem >
             {/* mobile */}
