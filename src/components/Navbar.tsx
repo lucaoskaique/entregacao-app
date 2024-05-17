@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
-import { LogoIcon, LogoName } from './Logos'
+import { LogoIcon, ResponsiveLogoName } from './Logos'
 import { SwitchTheme } from "./switchTheme";
 
 interface RouteProps {
@@ -49,8 +49,9 @@ export const Navbar = () => {
           <NavigationMenuItem >
             {/* mobile */}
             <div className="flex justify-between w-full h-10 tablet:hidden relative">
-              <LogoIcon color="green" height={40} width={40}/>
-              <LogoName color="blue" className="absolute inset-x-1/2 -translate-x-2/4" height={80} />
+              <LogoIcon color="green" />
+              <ResponsiveLogoName />
+
               <span className="flex items-center gap-x-4 tablet:hidden">
                 <SwitchTheme className="flex items-center h-full gap-x-2 max-[640px]:hidden" />
                 <ModeToggle className="min-[640px]:hidden max-[460px]:hidden" />
@@ -91,34 +92,33 @@ export const Navbar = () => {
           </NavigationMenuItem>
 
           {/* desktop */}
-          <NavigationMenuItem className="font-bold flex hidden">
-            <a
-              rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
-              Entregação
-            </a>
+          <NavigationMenuItem>
+            <div className="hidden tablet:flex justify-between w-full h-10 relative">
+              <section className="flex items-center gap-x-4">
+                <LogoIcon color="green"/>
+                <ResponsiveLogoName className="" />
+              </section>
+              <section className="flex items-center gap-x-4">
+                <nav className="hidden min-[992px]:flex gap-2">
+                  {routeList.map((route: RouteProps, i) => (
+                    <a
+                      rel="noreferrer noopener"
+                      href={route.href}
+                      key={i}
+                      className={`text-[17px] ${buttonVariants({
+                        variant: "ghost",
+                      })}`}
+                    >
+                      {route.label}
+                    </a>
+                  ))}
+                </nav>
+                <div className="hidden min-[992px]:flex gap-2">
+                  <ModeToggle />
+                </div>
+              </section>
+            </div>
           </NavigationMenuItem>
-
-          <nav className="hidden min-[992px]:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden min-[992px]:flex gap-2">
-            <ModeToggle />
-          </div>
         </NavigationMenuList>
       </NavigationMenu>
     </header >
