@@ -3,13 +3,14 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { WhatsappIcon } from './Icons'
+} from '@/components/ui/accordion'
+
+import { WhatsappIcon } from '../../utils/icons'
 
 interface FAQProps {
-  question: string;
-  answer: string;
-  value: string;
+  question: string
+  answer: string
+  value: string
 }
 
 const FAQList: FAQProps[] = [

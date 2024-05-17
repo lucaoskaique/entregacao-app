@@ -1,14 +1,16 @@
-import { WhatsappIcon } from '../Icons'
-interface ButtonWppProps {
-    whatsappLink: string;
+import { WhatsappIcon } from '../../utils/icons'
+
+interface ButtonWppType {
+    title: string
+    whatsappLink: string
 }
 
-export default function ButtonWpp({ whatsappLink }: ButtonWppProps) {
+export default function ButtonWpp({ title, whatsappLink }: ButtonWppType) {
     return (
         <>
-            <a role='button'  href={whatsappLink} target='_blank' rel="noopener noreferrer" className='bg-[#00A324] text-white w-full flex items-center justify-between p-5 rounded-sm text-base font-semibold mb-6'>
-                Quero Ajudar
-                <WhatsappIcon />
+            <a role='button' href={whatsappLink} target='_blank' rel="noopener noreferrer" className='bg-wppButton text-white w-full flex items-center justify-between p-5 rounded-sm text-xl font-inter-bold mb-6'>
+                {title}
+                <WhatsappIcon width={24} height={24} />
             </a>
         </>
     )

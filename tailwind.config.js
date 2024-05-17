@@ -22,6 +22,12 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        "inter-regular": ["inter-regular", "sans-serif"],
+        "inter-medium": ["inter-medium", "sans-serif"],
+        "inter-semibold": ["inter-semibold", "sans-serif"],
+        "inter-bold": ["inter-bold", "sans-serif"],
+      },
       colors: {
         wppButton: "#71CD69",
         border: "hsl(var(--border))",

@@ -5,7 +5,7 @@ type ImageProps = {
     className?: string
 }
 
-export const CarIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
+export const TruckIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
     return (
         <svg className={className} width={width} height={height} viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.5526 42.3777C23.6377 42.3777 25.3279 40.6875 25.3279 38.6024C25.3279 36.5174 23.6377 34.8271 21.5526 34.8271C19.4676 34.8271 17.7773 36.5174 17.7773 38.6024C17.7773 40.6875 19.4676 42.3777 21.5526 42.3777Z" stroke={color} strokeWidth="2" strokeMiterlimit="10" />
@@ -21,7 +21,7 @@ export const CarIcon = ({ color = "black", width = 60, height = 60, className }:
     )
 }
 
-export const PadrinhoIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
+export const HeartIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
     return (
         <svg className={className} width={width} height={height} viewBox="0 0 61 63" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M56.0914 16.2813C58.5778 20.7404 60 25.9119 60 31.4266C60 48.2332 46.7923 61.8533 30.5016 61.8533C14.2109 61.8533 1 48.2332 1 31.4266C1 14.6201 14.2077 1 30.4984 1C34.5703 1 38.4507 1.85166 41.9826 3.38983" stroke={color} strokeWidth="2" strokeMiterlimit="10" />
