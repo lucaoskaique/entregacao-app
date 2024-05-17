@@ -13,11 +13,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "./button";
 import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
-import { LogoIcon, ResponsiveLogoName } from './Logos'
-import { SwitchTheme } from "./switchTheme";
+import { ModeToggle } from "../mode-toggle";
+import { LogoIcon, ResponsiveLogoName } from '../Logos'
+import { SwitchTheme } from "../switchTheme";
 
 interface RouteProps {
   href: string;

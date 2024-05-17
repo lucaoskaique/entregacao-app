@@ -3,13 +3,15 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+
+
 } from "@/components/ui/accordion";
-import { WhatsappIcon } from './Icons'
+import ButtonWpp from "./button-wpp-hero";
 
 interface FAQProps {
-  question: string;
-  answer: string;
-  value: string;
+  question: string
+  answer: string
+  value: string
 }
 
 const FAQList: FAQProps[] = [
@@ -69,9 +71,10 @@ export const FAQ = () => {
         <div className="flex flex-col items-center mt-8 gap-y-3">
           <h3 className="font-bold text-2xl text-center">
             Ainda com dúvidas?<br />Fale com o nosso time.</h3>
-          <button className="px-[60px] bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex justify-center items-center gap-x-2">
-            <WhatsappIcon />Fale agora
-          </button>
+          {/* <button className="px-[60px] bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex justify-center items-center gap-x-2"> */}
+
+          <ButtonWpp title= "Fale agora"whatsappLink="https://chat.whatsapp.com/EaLtt3YjZVrLkwNPojlxIO" />
+          
         </div>
       </section>
     </section>
