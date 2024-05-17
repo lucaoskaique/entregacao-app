@@ -44,13 +44,13 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="container pt-20 -mb-52 max-w-[890px] relative">
-      <img className='absolute -z-10 top-10 -left-[330px]' src={BgGreenVectorFaq} />
+      className="container mt-20 -mb-44 max-w-[890px] relative">
+      <img className='absolute -z-10 -top-8 -left-[340px]' src={BgGreenVectorFaq} />
       <h2 className="text-2xl tablet:text-3xl tablet:text-center font-bold mb-4">
         Dúvidas frequentes
       </h2>
 
-      <section className="bg-white text-black py-12 px-8 border-[3px] border-black rounded-[20px]">
+      <section className="bg-white text-black py-12 px-10 border-[3px] border-black rounded-[20px]">
         <Accordion
           type="single"
           collapsible
@@ -70,8 +70,10 @@ export const FAQ = () => {
           ))}
         </Accordion>
         <div className="flex flex-col items-center mt-8 gap-y-3">
-          <h3 className="font-bold text-2xl text-center">
-            Ainda com dúvidas?<br />Fale com o nosso time.</h3>
+          <h3 className="flex flex-col tablet:flex-row tablet:gap-x-4 font-bold text-2xl text-center">
+            Ainda com dúvidas?
+            <span>Fale com o nosso time.</span>
+          </h3>
           <a className="bg-wppButton text-white text-base font-bold py-2 px-8 rounded-lg flex justify-center items-center gap-x-2" role='button' href="https://discord.com/channels/1240399088298492094/1240399088764063829/1241095095088840784" target='_blank' rel="noopener noreferrer">
             <WhatsappIcon />
             Fale Agora
