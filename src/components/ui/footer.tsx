@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
   return (
     <section className="bg-neutral-900 pb-[56.41px] pt-52">
       <div className='mt-16 container max-w-[890px]'>
-        <div className="flex justify-center gap-x-4 items-center">
+        <div className="mb-10 tablet:mb-0 flex justify-center gap-x-4 items-center">
           <LogoIcon color="white" />
           <LogoName color="white" />
         </div>
