@@ -1,6 +1,6 @@
 import SOS from '@/assets/images/sos-cozinhas.png'
 import { InstagramIcon } from '../../utils/icons'
-import { LogoIcon, LogoName } from '../Logos'
+import { LogoIcon, LogoName } from '../../utils/logos/logos'
 import { Container } from './container';
 
 // Defina o tipo RouteProps e a lista routeList se ainda não estiverem definidos
@@ -32,9 +32,9 @@ const routeList: RouteProps[] = [
 
 export const Footer: React.FC = () => {
   return (
-    <section className="bg-neutral-900 pb-[56.41px] pt-7">
+    <section className="bg-neutral-900 pb-[56.41px] pt-52">
       <Container>
-        <div className='max-w-[1200px] m-auto'>
+        <div className='pt-10'>
           <div className="flex justify-center gap-x-4 items-center my-[41px]">
             <LogoIcon color="white" />
             <LogoName color="white" />
@@ -51,12 +51,12 @@ export const Footer: React.FC = () => {
               </a>
             ))}
           </nav>
-          <section className="flex flex-col tablet:flex-row tablet:gap-12 justify-between gap-2 my-[24px] px-10">
-            <div className="tablet:w-[50%] text-black bg-white flex flex-col rounded-lg items-center py-[11px] gap-[10px] h-full tablet:flex-row tablet:justify-center">
+          <section className="flex flex-col tablet:flex-row tablet:gap-12 justify-between gap-2 my-[24px] px-10 tablet:h-[150px]">
+            <div className="tablet:w-[50%] text-black bg-white flex flex-col rounded-lg items-center h-[150px] py-[11px] gap-[10px] h-[153px] tablet:h-full tablet:flex-row tablet:justify-center">
               <span className='font-inter-medium text-xs uppercase'>Apoio:</span>
               <img src={SOS} alt="Cozinha SOS RS" className="w-[124.57px] h-[110.12px]" />
             </div>
-            <div className="tablet:w-[50%] bg-[#212121]/40 border border-[#262626] flex items-center justify-center gap-x-4 h-[150px] rounded-xl">
+            <div className="tablet:w-[50%] bg-[#212121]/40 border border-[#262626] flex items-center justify-center gap-x-4 h-[91px] tablet:h-full rounded-xl">
               <InstagramIcon />
               <span className="text-white font-inter-medium text-2xl">@sos.cozinhas</span>
             </div>
