@@ -6,6 +6,7 @@ import {
 } from '@/components/ui/accordion'
 
 import { WhatsappIcon } from '../../utils/icons'
+import BgGreenVectorFaq from '@/assets/images/background-vector-faq.svg'
 
 interface FAQProps {
   question: string
@@ -43,8 +44,9 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="container py-20">
-      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+      className="container pt-20 -mb-52 max-w-[890px] relative">
+      <img className='absolute -z-10 top-10 -left-[330px]' src={BgGreenVectorFaq} />
+      <h2 className="text-2xl tablet:text-3xl tablet:text-center font-bold mb-4">
         Dúvidas frequentes
       </h2>
 
@@ -70,9 +72,10 @@ export const FAQ = () => {
         <div className="flex flex-col items-center mt-8 gap-y-3">
           <h3 className="font-bold text-2xl text-center">
             Ainda com dúvidas?<br />Fale com o nosso time.</h3>
-          <button className="px-[60px] bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex justify-center items-center gap-x-2">
-            <WhatsappIcon />Fale agora
-          </button>
+          <a className="bg-wppButton text-white text-base font-bold py-2 px-8 rounded-lg flex justify-center items-center gap-x-2" role='button' href="https://discord.com/channels/1240399088298492094/1240399088764063829/1241095095088840784" target='_blank' rel="noopener noreferrer">
+            <WhatsappIcon />
+            Fale Agora
+          </a>
         </div>
       </section>
     </section>
