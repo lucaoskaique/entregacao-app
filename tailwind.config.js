@@ -11,14 +11,18 @@ module.exports = {
   theme: {
     screens: {
       'mobile': '360px',
-      'tablet': '992px',
-      'desktop': '1440px',
+      'tablet': '768px',
+      'desktop': '1024px',
     },
     container: {
       center: true,
       padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        'sm': '100%',  // Mobile width
+        'md': '100%',  // Tablet width
+        'lg': '1024px',  // Desktop width
+        'xl': '1280px',  // Larger desktop width
+        '2xl': '1400px',  // Extra-large desktop width
       },
     },
     extend: {

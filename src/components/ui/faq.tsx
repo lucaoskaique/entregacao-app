@@ -16,7 +16,7 @@ interface FAQProps {
 const FAQList: FAQProps[] = [
   {
     question: "Como posso ajudar?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-1",
   },
   {
@@ -26,15 +26,14 @@ const FAQList: FAQProps[] = [
     value: "item-2",
   },
   {
-    question:
-      "Quem pode ajudar?",
+    question: "Quem pode ajudar?",
     answer:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
     value: "item-3",
   },
   {
     question: "Posso ser padrinho?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-4",
   }
 ];
@@ -52,25 +51,24 @@ export const FAQ = () => {
         <Accordion
           type="single"
           collapsible
-          className="w-full AccordionRoot">
+          className="w-full">
           {FAQList.map(({ question, answer, value }: FAQProps) => (
             <AccordionItem
               key={value}
               value={value}
-              className="border-b-[1px] border-black"
-            >
-              <AccordionTrigger className="text-left text-lg font-bold">
+              className="border-b-[1px] border-black">
+              <AccordionTrigger className="text-left text-lg font-bold py-4">
                 {question}
               </AccordionTrigger>
-
-              <AccordionContent>{answer}</AccordionContent>
+              <AccordionContent className="pb-4">{answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
         <div className="flex flex-col items-center mt-8 gap-y-3">
           <h3 className="font-bold text-2xl text-center">
-            Ainda com dúvidas?<br />Fale com o nosso time.</h3>
-          <button className="px-[60px] bg-wppButton text-white text-base font-bold py-4 px-4 rounded-lg flex justify-center items-center gap-x-2">
+            Ainda com dúvidas?<br />Fale com o nosso time.
+          </h3>
+          <button className="px-8 bg-wppButton text-white text-base font-bold py-4 rounded-lg flex justify-center items-center gap-x-2">
             <WhatsappIcon />Fale agora
           </button>
         </div>

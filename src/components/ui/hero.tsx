@@ -12,7 +12,7 @@ export const Hero = () => {
 
   return (
     <Container>
-      <section className='min-h-[100px] flex flex-col gap-6 items-center mt-6 mx-3 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start'>
+      <section className='container min-h-[100px] flex flex-col gap-6 items-center mt-6 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start'>
         <div className='w-full min-w-[250px] max-w-[411px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
           <div className='border-b border-neutral-300 mb-6'>
             <div className='flex gap-3 mb-6'>
