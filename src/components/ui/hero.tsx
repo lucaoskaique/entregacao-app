@@ -13,7 +13,7 @@ export const Hero = () => {
 
   return (
     <Container>
-      <section className='min-h-[100px] flex flex-col gap-6 items-center mt-8 tablet:flex-row tablet:justify-between tablet:items-start'>
+      <section className='container min-h-[100px] flex flex-col gap-6 items-center mt-6 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start'>
         <div className='w-full min-w-[250px] max-w-[411px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
           <div className='border-b border-neutral-300 mb-6'>
             <div className='flex gap-3 mb-6'>
@@ -29,7 +29,14 @@ export const Hero = () => {
             <span className='font-inter-regular text-[13px]'>Mais detalhes</span>
             <img src={Arrow} alt='Seta' className={`${text1 ? 'transform -rotate-90' : ''}`} />
           </button>
-          <span className={`${text1 ? 'block' : 'hidden'} text-neutral-300 text-sm mt-6 leading-7 transition-all duration-1000 font-inter-regular`}>Basta entrar no grupo, aguardar aparecer o próximo pedido, clicar no link para aceitá-lo e seu cadastro começará imediatamente.</span>
+          <span className={`${text1 ? 'block' : 'hidden'} text-neutral-300 text-sm mt-6 leading-7 transition-all duration-1000 font-inter-regular`}>
+            <ul className='list-disc ml-4'>
+              <li>Realiza a coleta e a entrega do pedido</li>
+              <li>Basta entrar no grupo</li>
+              <li>Aguardar aparecer o próximo pedido</li>
+              <li>Clicar no link para aceitá-lo e seu cadastro começará imediatamente</li>
+            </ul>
+          </span>
         </div>
         <div className='w-full min-w-[250px] max-w-[411px] bg-white border border-neutral-700 rounded-xl p-6 flex flex-col shadow-xl'>
           <div className='border-b border-neutral-700 mb-6'>
@@ -47,8 +54,13 @@ export const Hero = () => {
             <img src={Arrow} alt='Seta' className={`${text2 ? 'transform -rotate-90' : ''}`} />
           </button>
           <span className={`${text2 ? 'block' : 'hidden'} text-black text-sm mt-6 leading-7 font-inter-regular`}>
-            <strong>Padrinho (Solicitante): </strong>
-            Intermedia o pedido entre o Entregador e o Restaurante/Cozinha, Acompanha todos os pedidos, Apadrinha novos Restaurantes/Cozinhas.</span>
+            <ul className='list-disc ml-4'>
+              <li>Registra o Restaurante ou Cozinha no Sistema</li>
+              <li>Intermedia o pedido para o Entregador</li>
+              <li>Acompanha todos os pedidos [Recebe notificações do momento da Coleta a Entrega]</li>
+              <li>Apadrinha novos Restaurantes/Cozinhas.</li>
+            </ul>
+            </span>
         </div>
       </section>
       {/* <img className="absolute -z-10 -right-[170px] top-[300px]" src={BgGreenVectorHero} /> */}

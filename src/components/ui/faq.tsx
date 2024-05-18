@@ -17,7 +17,7 @@ interface FAQProps {
 const FAQList: FAQProps[] = [
   {
     question: "Como posso ajudar?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-1",
   },
   {
@@ -27,15 +27,14 @@ const FAQList: FAQProps[] = [
     value: "item-2",
   },
   {
-    question:
-      "Quem pode ajudar?",
+    question: "Quem pode ajudar?",
     answer:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
     value: "item-3",
   },
   {
     question: "Posso ser padrinho?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-4",
   }
 ];
@@ -54,18 +53,16 @@ export const FAQ = () => {
         <Accordion
           type="single"
           collapsible
-          className="w-full AccordionRoot">
+          className="w-full">
           {FAQList.map(({ question, answer, value }: FAQProps) => (
             <AccordionItem
               key={value}
               value={value}
-              className="border-b-[1px] border-black"
-            >
-              <AccordionTrigger className="text-left text-lg font-bold">
+              className="border-b-[1px] border-black">
+              <AccordionTrigger className="text-left text-lg font-bold py-4">
                 {question}
               </AccordionTrigger>
-
-              <AccordionContent>{answer}</AccordionContent>
+              <AccordionContent className="pb-4">{answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
