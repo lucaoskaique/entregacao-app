@@ -22,7 +22,7 @@ export const Hero = () => {
                 <span className='text-3xl font-inter-semibold'>Entregador</span>
               </div>
             </div>
-            <ButtonWpp title='Quero entregar' whatsappLink='' />
+            <ButtonWpp title='Quero entregar' whatsappLink='https://chat.whatsapp.com/EaLtt3YjZVrLkwNPojlxIO' />
           </div>
           <button type='button' className='border border-neutral-300 text-neutral-300 text-[13px] font-inter-regular rounded-sm  p-2 w-32 flex justify-between items-center transition-all duration-1000' onClick={() => setText1(!text1)}>
             <span className='font-inter-regular text-[13px]'>Mais detalhes</span>
@@ -46,7 +46,7 @@ export const Hero = () => {
                 <span className='text-3xl font-inter-semibold'>Padrinho</span>
               </div>
             </div>
-            <ButtonWpp title='Quero apadrinhar' whatsappLink='' />
+            <ButtonWpp title='Quero apadrinhar' whatsappLink='https://api.whatsapp.com/send?phone=555127970709&text=cadastro' />
           </div>
           <button type='button' className='border border-neutral-700 text-neutral-700 text-[13px] rounded-sm p-2 w-32 flex justify-between items-center font-inter-regular' onClick={() => setText2(!text2)}>
             <span className='font-inter-regular text-[13px]'>Mais detalhes</span>
