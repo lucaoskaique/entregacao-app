@@ -17,8 +17,8 @@ const routeList: RouteProps[] = [
     label: "Sobre",
   },
   {
-    href: "#Padrinho",
-    label: "Seja um Padrinho",
+    href: "#Solicitante",
+    label: "Seja um Solicitante",
   },
   {
     href: "#Entregador",

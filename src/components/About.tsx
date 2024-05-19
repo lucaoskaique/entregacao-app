@@ -10,7 +10,7 @@ export const About = () => {
             Somos uma plataforma inovadora que utiliza o WhatsApp para facilitar o processo de coleta e entrega de doações entre colaboradores voluntários e estabelecimentos parceiros, como cozinhas e restaurantes.
           </p>
           <p className="leading-7 md:leading-10">
-            Nossa missão é conectar pessoas dispostas a ajudar como entregadores ou padrinhos de estabelecimentos, fornecendo uma experiência simples e eficiente.
+            Nossa missão é conectar pessoas dispostas a ajudar como entregadores ou solicitantes de estabelecimentos, fornecendo uma experiência simples e eficiente.
           </p>
           <p className="md:block leading-7 md:leading-10">
             Com notificações em tempo real e um painel de controle intuitivo, permitimos que os usuários acompanhem e participem ativamente de cada etapa do processo, fortalecendo a solidariedade em nossa comunidade e impactando positivamente a vida daqueles que mais necessitam.

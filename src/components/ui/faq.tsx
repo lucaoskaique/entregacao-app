@@ -32,7 +32,7 @@ const FAQList: FAQProps[] = [
     value: "item-3",
   },
   {
-    question: "Posso ser padrinho?",
+    question: "Posso ser solicitante?",
     answer: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
     value: "item-4",
   }

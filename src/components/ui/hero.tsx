@@ -43,7 +43,7 @@ export const Hero = () => {
               <HeartIcon />
               <div className='flex flex-col text-black'>
                 <span className='text-base font-inter-regular'>Sou</span>
-                <span className='text-3xl font-inter-semibold'>Padrinho</span>
+                <span className='text-3xl font-inter-semibold'>Solicitante</span>
               </div>
             </div>
             <ButtonWpp title='Quero apadrinhar' whatsappLink='https://api.whatsapp.com/send?phone=555127970709&text=cadastro' />
