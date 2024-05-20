@@ -48,7 +48,7 @@ export const ResponsiveLogoIcon = () => {
   }
 }
 
-export const ResponsiveLogoName = ({className = "absolute inset-x-1/2 -translate-x-2/4"}:{className?:string}) => {
+export const ResponsiveLogoName = ({className}:{className?:string}) => {
   const { theme } = useTheme()
   if(theme==="dark"){
     return <LogoName className={className} color="white" height={45} />
