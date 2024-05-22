@@ -45,80 +45,52 @@ export const Navbar = () => {
   return (
     <header className="py-5">
       <NavigationMenu className="container sticky block top-0 z-40 bg-white dark:border-b-slate-700 dark:bg-background">
-        <NavigationMenuList className="block">
-          <NavigationMenuItem >
-            {/* mobile */}
-            <div className="flex justify-between w-full h-10 tablet:hidden relative">
-              <LogoIcon color="green" />
-              <ResponsiveLogoName />
-
-              <span className="flex items-center gap-x-4 tablet:hidden">
-                <SwitchTheme className="flex items-center h-full gap-x-2 max-[640px]:hidden" />
-                <ModeToggle className="min-[640px]:hidden max-[460px]:hidden" />
-                <Sheet
-                  open={isOpen}
-                  onOpenChange={setIsOpen}>
-                  <SheetTrigger className="p-3 h-full shadow-md">
-                    <Menu
-                      className="flex min-[992px]:hidden h-5 w-5"
-                      onClick={() => setIsOpen(true)}>
-                      <span className="sr-only">Menu Icon</span>
-                    </Menu>
-                  </SheetTrigger>
-
-                  <SheetContent side={"right"}>
-                    <SheetHeader>
-                      <SheetTitle className="font-semibold text-xl">
-                        Entreg<span className="font-black">ação</span >
-                      </SheetTitle>
-                    </SheetHeader>
-                    <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                      {routeList.map(({ href, label }: RouteProps) => (
-                        <a
-                          rel="noreferrer noopener"
-                          key={label}
-                          href={href}
-                          onClick={() => setIsOpen(false)}
-                          className={buttonVariants({ variant: "ghost" })}
-                        >
-                          {label}
-                        </a>
-                      ))}
-                    </nav>
-                  </SheetContent>
-                </Sheet>
-              </span>
-            </div>
+        <NavigationMenuList className="flex justify-between items-center w-full">
+          <NavigationMenuItem className="flex items-center gap-2">
+            <LogoIcon color="green" />
+            <ResponsiveLogoName />
           </NavigationMenuItem>
 
-          {/* desktop */}
-          <NavigationMenuItem>
-            <div className="hidden tablet:flex justify-between w-full h-10 relative">
-              <section className="flex items-center gap-x-4">
-                <LogoIcon color="green"/>
-                <ResponsiveLogoName className="" />
-              </section>
-              <section className="flex items-center gap-x-4">
-                <nav className="hidden min-[992px]:flex gap-2">
-                  {routeList.map((route: RouteProps, i) => (
-                    <a
-                      rel="noreferrer noopener"
-                      href={route.href}
-                      key={i}
-                      className={`text-[17px] ${buttonVariants({
-                        variant: "ghost",
-                      })}`}
-                    >
-                      {route.label}
-                    </a>
-                  ))}
-                </nav>
-                <div className="hidden min-[992px]:flex gap-2">
-                  <ModeToggle />
-                </div>
-              </section>
-            </div>
-          </NavigationMenuItem>
+          <span className="flex items-center gap-4">
+            <NavigationMenuItem className="flex items-center gap-4 relative">
+              <SwitchTheme className="flex items-center gap-2 max-[640px]:hidden" />
+              <ModeToggle className="min-[640px]:hidden" />
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Sheet
+                open={isOpen}
+                onOpenChange={setIsOpen}>
+                <SheetTrigger className="p-3 h-full shadow-md">
+                  <Menu
+                    className="h-5 w-5"
+                    onClick={() => setIsOpen(true)}>
+                    <span className="sr-only">Menu Icon</span>
+                  </Menu>
+                </SheetTrigger>
+
+                <SheetContent side={"right"} className="w-1/2">
+                  <SheetHeader>
+                    <SheetTitle className="font-semibold text-xl">
+                      Entreg<span className="font-black">ação</span >
+                    </SheetTitle>
+                  </SheetHeader>
+                  <nav className="flex flex-col justify-center items-center gap-2 mt-4">
+                    {routeList.map(({ href, label }: RouteProps) => (
+                      <a
+                        rel="noreferrer noopener"
+                        key={label}
+                        href={href}
+                        onClick={() => setIsOpen(false)}
+                        className={buttonVariants({ variant: "ghost" })}
+                      >
+                        {label}
+                      </a>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </NavigationMenuItem>
+          </span>
         </NavigationMenuList>
       </NavigationMenu>
     </header >
