@@ -5,7 +5,9 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 
-import { WhatsappIcon } from '../../utils/icons'
+import { WhatsappIcon } from './utils/icons'
+import SrcBgVector from '../../assets/images/background-vector-faq.svg'
+import SrcBgDesktopVector from '../../assets/images/background-desktop-vector-faq.svg'
 
 interface FAQProps {
   question: string
@@ -42,8 +44,11 @@ export const FAQ = () => {
   return (
     <section
       id="faq"
-      className="container py-20">
-      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+      className="container mt-20 -mb-52 relative ">
+      <img src={SrcBgVector} className='absolute -z-10 w-full left-0 top-0 tablet:hidden'/> {/* Image for mobile */}
+      <img src={SrcBgDesktopVector} className='hidden -z-10 tablet:block absolute -left-[320px] -top-10'/> {/* Image for desktop */}
+
+      <h2 className="text-2xl text-start tablet:text-center md:text-4xl font-bold mb-5 tablet:mb-10">
         Dúvidas frequentes
       </h2>
 
