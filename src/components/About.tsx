@@ -5,7 +5,7 @@ export const About = () => {
         <h2 className="text-2xl tablet:text-3xl font-bold text-left tablet:text-center mb-6">
           Transformamos Solidariedade em Ação
         </h2>
-        <div className="flex flex-col text-sm tablet:text-base gap-y-6 my-6 font-regular tablet:w-3/5 tablet:mx-auto">
+        <div className="flex flex-col text-sm tablet:text-base gap-y-6 my-6 font-regular tablet:text-center">
           <p className="leading-7 tablet:leading-10">
             Somos uma plataforma inovadora que utiliza o WhatsApp para facilitar o processo de coleta e entrega de doações entre colaboradores voluntários e estabelecimentos parceiros, como cozinhas e restaurantes.
           </p>
