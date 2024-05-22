@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "../mode-toggle";
-import { LogoIcon, ResponsiveLogoName } from '../Logos'
+import { LogoIcon, ResponsiveLogoName } from './utils/logos'
 import { SwitchTheme } from "../switchTheme";
 
 interface RouteProps {
