@@ -1,4 +1,4 @@
-import { About } from './components/About'
+import { About } from './components/ui/about'
 import { FAQ } from './components/ui/faq'
 import { Footer } from './components/ui/footer'
 import { Hero } from './components/ui/hero'
