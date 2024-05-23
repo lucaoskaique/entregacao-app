@@ -43,7 +43,7 @@ export const FAQ = () => {
     <section
       id="faq"
       className="container py-20">
-      <h2 className="text-2xl md:text-4xl font-bold mb-4">
+      <h2 className="text-2xl md:text-4xl font-inter-bold mb-4">
         Dúvidas frequentes
       </h2>
 
@@ -57,18 +57,18 @@ export const FAQ = () => {
               key={value}
               value={value}
               className="border-b-[1px] border-black">
-              <AccordionTrigger className="text-left text-lg font-bold py-4">
+              <AccordionTrigger className="text-left text-xl font-inter-semibold py-4">
                 {question}
               </AccordionTrigger>
-              <AccordionContent className="pb-4">{answer}</AccordionContent>
+              <AccordionContent className="pb-4 font-inter-regular">{answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
         <div className="flex flex-col items-center mt-8 gap-y-3">
-          <h3 className="font-bold text-2xl text-center">
+          <h3 className="font-inter-bold text-2xl text-center">
             Ainda com dúvidas?<br />Fale com o nosso time.
           </h3>
-          <button className="px-8 bg-wppButton text-white text-base font-bold py-4 rounded-lg flex justify-center items-center gap-x-2">
+          <button className="px-8 bg-wppButton text-white text-base font-inter-bold py-4 rounded-lg flex justify-center items-center gap-x-2">
             <WhatsappIcon />Fale agora
           </button>
         </div>
