@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import SrcBgVector from '../../assets/images/background-vector-hero.svg'
+import SrcBgVector from '@/assets/images/background-vector-hero.svg'
 
-import { HeartIcon, TruckIcon } from './utils/icons'
+import { HeartIcon, TruckIcon } from '../utils/icons'
 import Arrow from '@/assets/images/arrow-down-right.svg'
 
-import ButtonWpp from './button-wpp-hero'
+import ButtonWpp from '../button-wpp-hero'
 
 export const Hero = () => {
   const [text1, setText1] = useState<boolean>(false)

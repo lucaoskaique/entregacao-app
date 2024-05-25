@@ -4,20 +4,20 @@ import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+} from "./components/navigation-menu";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "./components/sheet";
 
-import { buttonVariants } from "./button";
+import { buttonVariants } from "../button";
 import { Menu } from "lucide-react";
-import { ModeToggle } from "../mode-toggle";
-import { LogoIcon, ResponsiveLogoName } from './utils/logos'
-import { SwitchTheme } from "../switchTheme";
+import { ModeToggle } from "../../mode-toggle";
+import { LogoIcon, ResponsiveLogoName } from '../utils/logos'
+import { SwitchTheme } from "./components/switchTheme";
 
 interface RouteProps {
   href: string;

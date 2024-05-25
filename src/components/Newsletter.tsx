@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Input } from "./input";
 
 export const Newsletter = () => {
   const handleSubmit = (e: any) => {

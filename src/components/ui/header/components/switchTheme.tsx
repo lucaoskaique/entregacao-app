@@ -1,5 +1,5 @@
-import { Switch } from "./ui/switch"
-import { useTheme } from "@/components/theme-provider";
+import { Switch } from "../../../switch"
+import { useTheme } from "@/components/ui/theme-provider";
 import { Moon, Sun } from "lucide-react"
 
 

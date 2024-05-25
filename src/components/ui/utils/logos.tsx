@@ -1,4 +1,4 @@
-import { useTheme } from "../../theme-provider"
+import { useTheme } from "../theme-provider"
 
 const colors = {
   white: "#FFFFFF",
