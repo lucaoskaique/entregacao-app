@@ -119,7 +119,13 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+#root {
+  overflow-x: hidden;
+  /* Correção para vetor da seção 'hero' não vazar */
 }

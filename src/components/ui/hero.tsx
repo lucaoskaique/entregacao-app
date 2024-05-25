@@ -1,18 +1,18 @@
 import { useState } from 'react'
+import SrcBgVector from '../../assets/images/background-vector-hero.svg'
 
-import { HeartIcon, TruckIcon } from '../../utils/icons'
+import { HeartIcon, TruckIcon } from './utils/icons'
 import Arrow from '@/assets/images/arrow-down-right.svg'
 
 import ButtonWpp from './button-wpp-hero'
-import { Container } from './container';
 
 export const Hero = () => {
   const [text1, setText1] = useState<boolean>(false)
   const [text2, setText2] = useState<boolean>(false)
 
   return (
-    <Container>
-      <section className='container min-h-[100px] flex flex-col gap-6 items-center mt-6 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start'>
+      <section className='container min-h-[100px] flex flex-col gap-6 items-center mt-6 min-[992px]:flex-row min-[992px]:justify-center min-[992px]:items-start relative'>
+        <img src={SrcBgVector} className='absolute -bottom-[410px] -right-[120px] -z-10 max-tablet:rotate-[30deg] tablet:-right-[290px] tablet:-bottom-[300px]' />
         <div className='w-full min-w-[250px] max-w-[411px] bg-neutral-800 rounded-xl p-6 flex flex-col shadow-xl'>
           <div className='border-b border-neutral-300 mb-6'>
             <div className='flex gap-3 mb-6'>
@@ -59,9 +59,8 @@ export const Hero = () => {
               <li>Acompanha todos os pedidos [Recebe notificações do momento da Coleta a Entrega]</li>
               <li>Apadrinha novos Restaurantes/Cozinhas.</li>
             </ul>
-            </span>
+          </span>
         </div>
       </section>
-    </Container>
   );
 };
