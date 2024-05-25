@@ -1,6 +1,6 @@
 import SOS from "@/assets/images/sos-cozinhas.png";
-import { InstagramIcon } from "./utils/icons";
-import { LogoIcon, LogoName } from "./utils/logos";
+import { InstagramIcon } from "../utils/icons";
+import { LogoIcon, LogoName } from "../utils/logos";
 
 // Defina o tipo RouteProps e a lista routeList se ainda não estiverem definidos
 // Defina o tipo RouteProps

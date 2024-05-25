@@ -3,11 +3,11 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion'
+} from './components/accordion'
 
-import { WhatsappIcon } from './utils/icons'
-import SrcBgVector from '../../assets/images/background-vector-faq.svg'
-import SrcBgDesktopVector from '../../assets/images/background-desktop-vector-faq.svg'
+import { WhatsappIcon } from '../utils/icons'
+import SrcBgVector from '@/assets/images/background-vector-faq.svg'
+import SrcBgDesktopVector from '@/assets/images/background-desktop-vector-faq.svg'
 
 interface FAQProps {
   question: string
