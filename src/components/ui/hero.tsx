@@ -46,7 +46,7 @@ export const Hero = () => {
                 <span className='text-3xl font-inter-semibold'>Solicitante</span>
               </div>
             </div>
-            <ButtonWpp title='Quero apadrinhar' whatsappLink='https://api.whatsapp.com/send?phone=555127970709&text=cadastro' />
+            <ButtonWpp title='Quero solicitar' whatsappLink='https://api.whatsapp.com/send?phone=555127970709&text=cadastro' />
           </div>
           <button type='button' className='border border-neutral-700 text-neutral-700 text-[13px] rounded-sm p-2 w-32 flex justify-between items-center font-inter-regular' onClick={() => setText2(!text2)}>
             <span className='font-inter-regular text-[13px]'>Mais detalhes</span>
