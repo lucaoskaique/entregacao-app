@@ -10,7 +10,7 @@ export default function ButtonWpp({ title, whatsappLink }: ButtonWppType) {
         <>
             <a role='button' href={whatsappLink} target='_blank' rel="noopener noreferrer" className='bg-wppButton text-white w-full flex items-center justify-between p-5 rounded-sm text-xl font-inter-bold mb-6'>
                 {title}
-                <WhatsappIcon width={32} height={32} />
+                <WhatsappIcon width={24} height={24} />
             </a>
         </>
     )
