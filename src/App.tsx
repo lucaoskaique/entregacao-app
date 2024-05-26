@@ -1,7 +1,7 @@
 import { About } from './components/ui/about/about'
 import { FAQ } from './components/ui/faq/faq'
 import { Footer } from './components/ui/footer/footer'
-import { Hero } from './components/ui/hero/hero'
+import { Hero } from './components/ui/hero/hero-section'
 import { Navbar } from './components/ui/header/navbar'
 import { ScrollToTop } from './components/ui/scroll-to-top'
 import './styles/app.css'
