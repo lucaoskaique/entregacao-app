@@ -6,7 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/card";
+} from "@/components/ui/hero/components/card";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 interface TeamProps {

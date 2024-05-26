@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/card";
+} from "@/components/ui/hero/components/card";
 
 interface TestimonialProps {
   image: string;

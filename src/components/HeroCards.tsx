@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
   CardFooter,
-} from "@/components/card";
+} from "@/components/ui/hero/components/card";
 import { Check, Linkedin } from "lucide-react";
 
 export const HeroCards = () => {

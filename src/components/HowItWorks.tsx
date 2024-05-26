@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/hero/components/card";
 
 interface FeatureProps {
   title: string;

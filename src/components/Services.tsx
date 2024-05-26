@@ -1,4 +1,4 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "./card";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/hero/components/card";
 import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {
