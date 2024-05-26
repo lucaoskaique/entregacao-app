@@ -5,6 +5,13 @@ type ImageProps = {
     className?: string
 }
 
+export const ArrowIcon = ({ color = "black", className }: ImageProps) => (
+    <svg className={className} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 7.85327L17 17.8533" stroke={color} strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M17 7.85327L17 17.8533L7 17.8533" stroke={color} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+)
+
 export const TruckIcon = ({ color = "black", width = 60, height = 60, className }: ImageProps) => {
     return (
         <svg className={className} width={width} height={height} viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
