@@ -45,8 +45,8 @@ export const FAQ = () => {
     <section
       id="faq"
       className="container mt-20 -mb-52 relative ">
-      <img src={SrcBgVector} className='absolute -z-10 w-full left-0 top-0 tablet:hidden'/> {/* Image for mobile */}
-      <img src={SrcBgDesktopVector} className='hidden -z-10 tablet:block absolute -left-[320px] -top-10'/> {/* Image for desktop */}
+      <img src={SrcBgVector} className='absolute -z-10 w-full left-0 top-0 tablet:hidden' /> {/* Image for mobile */}
+      <img src={SrcBgDesktopVector} className='hidden -z-10 tablet:block absolute -left-[320px] -top-10' /> {/* Image for desktop */}
 
       <h2 className="text-3xl text-start tablet:text-center font-bold mb-5 tablet:mb-10">
         Dúvidas frequentes
