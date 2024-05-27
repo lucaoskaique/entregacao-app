@@ -45,8 +45,8 @@ export const FAQ = () => {
     <section
       id="faq"
       className="container mt-20 -mb-52 relative ">
-      <img src={SrcBgVector} className='absolute -z-10 w-full left-0 top-0 tablet:hidden'/> {/* Image for mobile */}
-      <img src={SrcBgDesktopVector} className='hidden -z-10 tablet:block absolute -left-[320px] -top-10'/> {/* Image for desktop */}
+      <img src={SrcBgVector} className='absolute -z-10 w-full left-0 top-0 tablet:hidden' /> {/* Image for mobile */}
+      <img src={SrcBgDesktopVector} className='hidden -z-10 tablet:block absolute -left-[320px] -top-10' /> {/* Image for desktop */}
 
       <h2 className="text-2xl text-start tablet:text-center md:text-4xl font-bold mb-5 tablet:mb-10">
         Dúvidas frequentes
@@ -71,9 +71,9 @@ export const FAQ = () => {
         </Accordion>
         <div className="flex flex-col items-center mt-8 gap-y-3">
           <h3 className="font-inter-bold text-2xl text-center">
-            Ainda com dúvidas?<br />Fale com o nosso time.
+            Ainda com dúvidas? <span className="block tablet:inline">Fale com o nosso time.</span>
           </h3>
-          <button className="px-8 bg-wppButton text-white text-base font-inter-bold py-4 rounded-lg flex justify-center items-center gap-x-2">
+          <button className="tablet:w-174px tablet:h-44px w-190px h-50px px-8 bg-wppButton text-white text-base tablet:text-xl font-inter-bold leading-[24px] tablet:line-height-[24px] 1.5rem tablet-py-2 py-4 rounded-lg flex justify-center items-center gap-x-2">
             <WhatsappIcon />Fale agora
           </button>
         </div>
