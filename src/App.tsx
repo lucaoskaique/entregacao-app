@@ -9,11 +9,7 @@ import "./styles/app.css";
 function App() {
   return (
     <>
-      <Navbar />
-      <Navbar />
-      <Navbar />
-      <Navbar />
-      <Navbar />
+      
       <Navbar />
       <Hero />
       <About />
