@@ -12,12 +12,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./components/sheet";
+import { buttonVariants } from "@/components/ui/button";
 
-import { buttonVariants } from "../button";
+import { ModeToggle } from "@/components/theme-provider/mode-toggle";
+import SwitchTheme from "@/components/theme-provider/switchTheme";
+
 import { Menu } from "lucide-react";
-import { ModeToggle } from "../../mode-toggle";
-import { LogoIcon, ResponsiveLogoName } from '../utils/logos'
-import { SwitchTheme } from "./components/switchTheme";
+import { LogoIcon, ResponsiveLogoName } from '@/components/utils/logos'
 
 interface RouteProps {
   href: string;
@@ -39,7 +40,7 @@ const routeList: RouteProps[] = [
   },
 ];
 
-export const Navbar = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
