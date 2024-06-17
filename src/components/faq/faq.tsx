@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from './components/accordion'
 
-import { WhatsappIcon } from '../utils/icons'
+import { WhatsappIcon } from '@/components/utils/icons'
 import SrcBgVector from '@/assets/images/background-vector-faq.svg'
 import SrcBgDesktopVector from '@/assets/images/background-desktop-vector-faq.svg'
 

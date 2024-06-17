@@ -1,6 +1,6 @@
 import SOS from "@/assets/images/sos-cozinhas.png";
-import { InstagramIcon } from "../utils/icons";
-import { LogoIcon, LogoName } from "../utils/logos";
+import { InstagramIcon } from "@/components/utils/icons";
+import { LogoIcon, LogoName } from "@/components/utils/logos";
 
 // Defina o tipo RouteProps e a lista routeList se ainda não estiverem definidos
 // Defina o tipo RouteProps
@@ -50,27 +50,14 @@ export const Footer: React.FC = () => {
           ))}
         </nav>
         <section className="flex flex-col tablet:flex-row tablet:gap-12 justify-between gap-2 my-[24px] px-10">
-          <div className="tablet:w-[50%] text-black bg-white flex flex-col rounded-lg items-center py-[11px] gap-[10px] h-full tablet:flex-row tablet:justify-center">
-            <span className="font-inter-medium text-xs uppercase">
-              Apoio:
-            </span>
-            <img
-              src={SOS}
-              alt="Cozinha SOS RS"
-              className="w-[124.57px] h-[110.12px]"
-            />
+          <div className="h-[150px] tablet:w-[50%] text-black bg-white flex flex-col rounded-lg items-center py-[11px] gap-[10px] tablet:flex-row tablet:justify-center">
+            <span className="font-inter-medium text-xs uppercase">Apoio:</span>
+            <img src={SOS} alt="Cozinha SOS RS" className="w-[124.57px] h-[110.12px]" />
           </div>
-          <div className="tablet:w-[50%] bg-[#212121]/40 border border-[#262626] flex items-center justify-center gap-x-4 h-[150px] rounded-xl">
-            <a
-              href="https://www.instagram.com/sos.cozinhas/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="flex items-center gap-x-2"
-            >
+          <div className="max-tablet:h-[90px] tablet:w-[50%] bg-[#212121]/40 border border-[#262626] flex items-center justify-center gap-x-4 rounded-xl">
+            <a href="https://www.instagram.com/sos.cozinhas/" target="_blank" rel="noreferrer noopener" className="flex items-center gap-x-2">
               <InstagramIcon />
-              <span className="text-white font-inter-medium text-2xl">
-                @sos.cozinhas
-              </span>
+              <span className="text-white font-inter-medium text-2xl">@sos.cozinhas</span>
             </a>
           </div>
         </section>

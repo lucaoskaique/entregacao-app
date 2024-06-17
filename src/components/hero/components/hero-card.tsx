@@ -8,7 +8,7 @@ import {
     CardFooter,
 } from "./card";
 
-import { ArrowIcon } from '@/components/ui/utils/icons'
+import { ArrowIcon } from '@/components/utils/icons'
 import ButtonWpp from '@/components/ui/button-wpp-hero'
 
 interface HeroCardProps {
