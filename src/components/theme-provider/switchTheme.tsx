@@ -1,16 +1,15 @@
-import { Switch } from "../../../switch"
-import { useTheme } from "@/components/ui/theme-provider";
+import { Switch } from "@/components/ui/switch"
+import { useTheme } from "@/components/theme-provider/theme-provider";
 import { Moon, Sun } from "lucide-react"
 
-
 const SwitchTheme = (props: {className?:string}) => {
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   
   return (
     <div className={props.className}>
       <Sun className="h-[1.1rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
       <Switch
-        defaultChecked={(window.matchMedia("(prefers-color-scheme: dark)").matches)}
+        defaultChecked={theme === "dark" ? true : false}
         onCheckedChange={(checked) => {
           if (checked) setTheme("dark")
           if (!checked) setTheme("light")
@@ -20,4 +19,4 @@ const SwitchTheme = (props: {className?:string}) => {
   )
 }
 
-export { SwitchTheme }
+export default SwitchTheme

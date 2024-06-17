@@ -1,4 +1,4 @@
-import { WhatsappIcon } from './utils/icons'
+import { WhatsappIcon } from '../utils/icons'
 
 interface ButtonWppType {
     title: string

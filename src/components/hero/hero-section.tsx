@@ -1,5 +1,5 @@
 import SrcBgVector from '@/assets/images/background-vector-hero.svg'
-import { HeartIcon, TruckIcon } from '../utils/icons'
+import { HeartIcon, TruckIcon } from '@/components/utils/icons'
 import { HeroCard } from './components/hero-card'
 
 const entregadorList: string[] = [

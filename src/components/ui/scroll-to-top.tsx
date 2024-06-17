@@ -30,7 +30,7 @@ export const ScrollToTop = () => {
           className="fixed bottom-4 right-4 opacity-90 shadow-md"
           size="icon"
         >
-          <ArrowUpToLine className="h-4 w-4" />
+          <ArrowUpToLine className="h-4 w-4 text-white dark:text-bla" />
         </Button>
       )}
     </>
